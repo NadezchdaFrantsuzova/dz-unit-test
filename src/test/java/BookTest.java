@@ -7,7 +7,7 @@ public class BookTest {
 
     @BeforeEach
     void setUp() {
-        book = new Book(2, "Шла Саша ");
+        book = new Book(4, "Шла Саша ");
         System.out.println("Вызываюсь до выполнения теста");
     }
 
@@ -19,13 +19,13 @@ public class BookTest {
     @Test
     @DisplayName("Тестирование метода up()")
     void up() {
-        Assertions.assertEquals(3, book.up());
+        Assertions.assertEquals(5, book.up());
     }
 
     @Test
     @DisplayName("Тестирование метода down()")
     void down() {
-        Assertions.assertEquals(1, book.down());
+        Assertions.assertEquals(3, book.down());
     }
 
     @Test
